@@ -1,0 +1,531 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 784
+  ClientWidth = 405
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Step1: TRectangle
+    Align = Horizontal
+    Fill.Color = claWhite
+    Position.Y = 168.000000000000000000
+    Size.Width = 405.000000000000000000
+    Size.Height = 481.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object fname: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      MaxLength = 31
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 54.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter Firstname'
+      StyledSettings = [Family, Style, FontColor]
+      OnTyping = fnameTyping
+      OnEnter = fnameEnter
+      OnExit = fnameExit
+    end
+    object lastname: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyleLookup = 'lastnameStyle1'
+      TabOrder = 5
+      MaxLength = 31
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 54.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter Lastname'
+      StyledSettings = [Family, Style, FontColor]
+      OnTyping = lastnameTyping
+      OnEnter = lastnameEnter
+      OnExit = lastnameExit
+    end
+    object passClear: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C249444154484BED94C10AC2301044078FD2432F5EFC59D1BF5310D19B07FF
+            44AD3B3A7B89691A925A3CF4C1D274333B036D0866FE8F0E583C818DD54AAD41
+            A8E50C67D5EAE701EC4CD8DD81734E0835A6BD70C666B76AF763C2D6060E0AB9
+            9AC15A5B5F708F1A6939D36A2B4D4E48B1B9930AA936776221A3993B41C88D35
+            9AB9A390138D65CE7596F9F0B935CC6C698FE6F3F6A651AF9EE09B1F595A278F
+            7016B11FCAD2BA2E24755AAA4352E64E714860BE8F993B4521535C76BFBDAE67
+            26067801EF3CCA54AFC74E620000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 322.000000000000000000
+      Position.Y = 188.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = passClearClick
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C649444154484BED94CD0AC2301084078FD2432F5E7C59D1B75310B1370F3E
+            893F7507662F314D43528B877EB090DDECCE9426040BFF470FACDEC0CE62A3D2
+            28ECE50C67551AE6051CACB17F02D71C13F6586FC7199BDDAB3C8C35B63670E2
+            C003B899C0565B5F708F3DFA20CEB4DA4A9363522CEEA44CAAC59D98C964E24E
+            6072674C26EEC8E4426189739D253E7E6F0D135B5B344A9937AC29AD23F8E767
+            06D77E266A2B2376A00CADEB4C52B7A5DA2425EE149B04E2C798B8536432C763
+            F7DBE77A6166800F45FBCC3E3D56741A0000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 322.000000000000000000
+      Position.Y = 276.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image1Click
+    end
+  end
+  object Step3: TRectangle
+    Fill.Color = claWhite
+    Position.X = -1.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 481.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    object idNumber: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      KeyboardType = NumberPad
+      MaxLength = 13
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter ID number'
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object password: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Password = True
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter Password'
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object rePassword: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Password = True
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 284.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Re Enter Password'
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Image4: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C649444154484BED94CD0AC2301084078FD2432F5E7C59D1B75310B1370F3E
+            893F7507662F314D43528B877EB090DDECCE9426040BFF470FACDEC0CE62A3D2
+            28ECE50C67551AE6051CACB17F02D71C13F6586FC7199BDDAB3C8C35B63670E2
+            C003B899C0565B5F708F3DFA20CEB4DA4A9363522CEEA44CAAC59D98C964E24E
+            6072674C26EEC8E4426189739D253E7E6F0D135B5B344A9937AC29AD23F8E767
+            06D77E266A2B2376A00CADEB4C52B7A5DA2425EE149B04E2C798B8536432C763
+            F7DBE77A6166800F45FBCC3E3D56741A0000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 316.000000000000000000
+      Position.Y = 284.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image4Click
+    end
+    object Image5: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C649444154484BED94CD0AC2301084078FD2432F5E7C59D1B75310B1370F3E
+            893F7507662F314D43528B877EB090DDECCE9426040BFF470FACDEC0CE62A3D2
+            28ECE50C67551AE6051CACB17F02D71C13F6586FC7199BDDAB3C8C35B63670E2
+            C003B899C0565B5F708F3DFA20CEB4DA4A9363522CEEA44CAAC59D98C964E24E
+            6072674C26EEC8E4426189739D253E7E6F0D135B5B344A9937AC29AD23F8E767
+            06D77E266A2B2376A00CADEB4C52B7A5DA2425EE149B04E2C798B8536432C763
+            F7DBE77A6166800F45FBCC3E3D56741A0000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 316.000000000000000000
+      Position.Y = 220.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image5Click
+    end
+    object Image6: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C649444154484BED94CD0AC2301084078FD2432F5E7C59D1B75310B1370F3E
+            893F7507662F314D43528B877EB090DDECCE9426040BFF470FACDEC0CE62A3D2
+            28ECE50C67551AE6051CACB17F02D71C13F6586FC7199BDDAB3C8C35B63670E2
+            C003B899C0565B5F708F3DFA20CEB4DA4A9363522CEEA44CAAC59D98C964E24E
+            6072674C26EEC8E4426189739D253E7E6F0D135B5B344A9937AC29AD23F8E767
+            06D77E266A2B2376A00CADEB4C52B7A5DA2425EE149B04E2C798B8536432C763
+            F7DBE77A6166800F45FBCC3E3D56741A0000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 316.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image6Click
+    end
+    object Image7: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            014349444154484BED94314A03611085273185856222D81B24A4F30409768216
+            E2012CD54AF0524608E2053C85A94C619A082278001B357ECFCC8FB39B1845DC
+            46F3E031FFBEF766F6DF3FBBB139FE3E4A5EA762645681DBF0006E22AD8D1D7B
+            A4B107CFE0157C71FDFB60E0FEB3599F3A9A453237AF667BDEF63508AFB29DCB
+            3884EB2EB5056B229936DA45F245BFAEF998E9A0B1CE8E06B111EDC4ED09E09D
+            C62CBDB7D475B7B320DC2470171BB473B775642B648E44AD5DD6E1679E961943
+            320DB7C740D8C0788841674B3EB51A9FCC77FA7E137AB7921EFC7BF4BA7C3597
+            107AF99073C933C7395D4777288FBA9CF744665ECB2FF38A71ADDC2414F44A2C
+            0B84B22F3FC3C74C56C51D510242713F7282EE1A772AA2FDCE6B9A40D3AC0F6D
+            5124F3B30F2D8270317F15110CA8D0BCCBEECE7533F8E4ECA375F076C82C787C
+            8EFF09B337B35744F19FE5CC550000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Eye_24px.png'
+        end>
+      Position.X = 316.000000000000000000
+      Position.Y = 250.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image7Click
+    end
+  end
+  object Step2: TRectangle
+    Fill.Color = claWhite
+    Position.X = -6.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 489.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    object email: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      KeyboardType = EmailAddress
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 62.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter E-mail'
+      StyledSettings = [Family, Style, FontColor]
+      CharCase = ecLowerCase
+      OnEnter = emailEnter
+      OnExit = emailExit
+    end
+    object phoneNumber: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      KeyboardType = PhonePad
+      MaxLength = 10
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 62.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter Phone number'
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object eightDigit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      KeyboardType = PhonePad
+      MaxLength = 10
+      TextSettings.Font.Size = 22.000000000000000000
+      Position.X = 138.000000000000000000
+      Position.Y = 409.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = '8 digits code'
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object veriButton: TRectangle
+      Fill.Color = xFF0DA37A
+      Position.X = 136.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object buttonLab: TLabel
+        Align = Center
+        StyledSettings = [Family, Size, Style]
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Trailing
+        Text = 'Verify Me'
+        TabOrder = 0
+      end
+    end
+    object Image2: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C649444154484BED94CD0AC2301084078FD2432F5E7C59D1B75310B1370F3E
+            893F7507662F314D43528B877EB090DDECCE9426040BFF470FACDEC0CE62A3D2
+            28ECE50C67551AE6051CACB17F02D71C13F6586FC7199BDDAB3C8C35B63670E2
+            C003B899C0565B5F708F3DFA20CEB4DA4A9363522CEEA44CAAC59D98C964E24E
+            6072674C26EEC8E4426189739D253E7E6F0D135B5B344A9937AC29AD23F8E767
+            06D77E266A2B2376A00CADEB4C52B7A5DA2425EE149B04E2C798B8536432C763
+            F7DBE77A6166800F45FBCC3E3D56741A0000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 332.000000000000000000
+      Position.Y = 172.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image2Click
+    end
+    object Image3: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C649444154484BED94CD0AC2301084078FD2432F5E7C59D1B75310B1370F3E
+            893F7507662F314D43528B877EB090DDECCE9426040BFF470FACDEC0CE62A3D2
+            28ECE50C67551AE6051CACB17F02D71C13F6586FC7199BDDAB3C8C35B63670E2
+            C003B899C0565B5F708F3DFA20CEB4DA4A9363522CEEA44CAAC59D98C964E24E
+            6072674C26EEC8E4426189739D253E7E6F0D135B5B344A9937AC29AD23F8E767
+            06D77E266A2B2376A00CADEB4C52B7A5DA2425EE149B04E2C798B8536432C763
+            F7DBE77A6166800F45FBCC3E3D56741A0000000049454E44AE426082}
+          FileName = 'C:\Users\Cebolenkosi Shezi\Desktop\Delete_24px.png'
+        end>
+      Position.X = 332.000000000000000000
+      Position.Y = 76.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image3Click
+    end
+  end
+  object buttonFoward: TRectangle
+    Fill.Color = xFFAA064A
+    Position.X = 112.000000000000000000
+    Position.Y = 632.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 58.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 25.000000000000000000
+    YRadius = 25.000000000000000000
+    OnClick = nextLblClick
+    object nextLbl: TLabel
+      Align = Center
+      StyledSettings = [Family, Style]
+      Size.Width = 105.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Next'
+      TabOrder = 0
+      OnClick = nextLblClick
+    end
+    object GlowEffect1: TGlowEffect
+      Softness = 0.699999988079071000
+      GlowColor = claOrangered
+      Opacity = 0.000000000000000000
+    end
+  end
+  object back: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 128.000000000000000000
+    Position.Y = 696.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbutton'
+    TabOrder = 4
+    Text = 'Login'
+    TextSettings.Font.Size = 17.000000000000000000
+    TextSettings.FontColor = claCrimson
+    OnClick = backClick
+  end
+  object Step4: TRectangle
+    Fill.Color = claWhite
+    Position.X = 7.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 385.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    object confirmation: TListBox
+      Align = Client
+      Size.Width = 385.000000000000000000
+      Size.Height = 385.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      Items.Strings = (
+        'Confirm')
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 385.000000000000000000
+      Viewport.Height = 385.000000000000000000
+    end
+  end
+  object Step5: TRectangle
+    Fill.Color = claWhite
+    Position.X = 15.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    object licenceAgree: TListBox
+      Align = Client
+      Size.Width = 385.000000000000000000
+      Size.Height = 425.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      Items.Strings = (
+        'License')
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 385.000000000000000000
+      Viewport.Height = 425.000000000000000000
+    end
+  end
+  object prograss: TLine
+    LineType = Bottom
+    Opacity = 0.699999988079071000
+    Position.X = 48.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claDarkgray
+    Stroke.Thickness = 5.000000000000000000
+    object currentPrograss: TLine
+      Align = Vertical
+      LineType = Bottom
+      Opacity = 0.699999988079071000
+      Position.Y = 23.000000000000000000
+      Size.Width = 25.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claCrimson
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object Details: TLabel
+      Align = MostTop
+      StyledSettings = [Family, Style]
+      Size.Width = 313.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claGray
+      TextSettings.HorzAlign = Center
+      Text = 'Personal details'
+      TabOrder = 1
+    end
+  end
+  object cerrRegi: TLabel
+    Align = Horizontal
+    StyledSettings = [Family, Style]
+    Position.Y = 544.000000000000000000
+    Size.Width = 405.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.FontColor = claFirebrick
+    TextSettings.HorzAlign = Center
+    Text = 'Cerr'
+    TabOrder = 5
+  end
+end

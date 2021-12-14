@@ -1,0 +1,1167 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 702
+  ClientWidth = 341
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 56
+    Top = 645
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer2Timer
+    Left = 8
+    Top = 640
+  end
+  object Dashboard: TLayout
+    Align = Client
+    Size.Width = 341.000000000000000000
+    Size.Height = 702.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Layout7: TLayout
+      Align = Client
+      Size.Width = 341.000000000000000000
+      Size.Height = 479.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object courses: TLayout
+        Position.X = 350.000000000000000000
+        Size.Width = 339.000000000000000000
+        Size.Height = 702.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label19: TLabel
+          Align = MostTop
+          StyledSettings = [Family, FontColor]
+          Size.Width = 339.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Courses'
+          TabOrder = 1
+        end
+        object Label20: TLabel
+          Align = MostTop
+          StyledSettings = [Family, Style]
+          Position.Y = 49.000000000000000000
+          Size.Width = 339.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Leading
+          Text = 'Double the click purple button to view courses'
+          TabOrder = 0
+        end
+        object Layout4: TLayout
+          Align = Top
+          Position.Y = 65.000000000000000000
+          Size.Width = 339.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object search: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 0
+            TextSettings.Font.Size = 14.000000000000000000
+            Position.X = 16.000000000000000000
+            Size.Width = 321.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Search Using APS or Course Name or Faculty Name'
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        object VertScrollBox2: TVertScrollBox
+          Align = Client
+          Size.Width = 339.000000000000000000
+          Size.Height = 596.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Viewport.Width = 339.000000000000000000
+          Viewport.Height = 596.000000000000000000
+        end
+      end
+      object marks: TLayout
+        Size.Width = 348.000000000000000000
+        Size.Height = 702.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnClick = marksClick
+        object Subj3: TComboBox
+          Position.X = 32.000000000000000000
+          Position.Y = 233.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+        end
+        object Subj2: TComboBox
+          Items.Strings = (
+            '')
+          Position.X = 32.000000000000000000
+          Position.Y = 177.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+        object Label10: TLabel
+          StyledSettings = [Style]
+          Position.X = 37.000000000000000000
+          Position.Y = 93.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'Home Additional Languege'
+          TabOrder = 8
+        end
+        object Label11: TLabel
+          StyledSettings = [Style]
+          Position.X = 34.000000000000000000
+          Position.Y = 214.000000000000000000
+          Size.Width = 231.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'Mathematics'
+          TabOrder = 14
+        end
+        object Label9: TLabel
+          StyledSettings = [Style]
+          Position.X = 36.000000000000000000
+          Position.Y = 159.000000000000000000
+          Size.Width = 263.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'First Additional Languege'
+          TabOrder = 5
+        end
+        object Subj1: TComboBox
+          Position.X = 32.000000000000000000
+          Position.Y = 113.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 15
+          OnClosePopup = Subj1ClosePopup
+          OnClick = Subj1Popup
+        end
+        object Subj6: TComboBox
+          Position.X = 32.000000000000000000
+          Position.Y = 417.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+        object Subj5: TComboBox
+          Position.X = 32.000000000000000000
+          Position.Y = 353.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          OnClosePopup = Subj5ClosePopup
+        end
+        object Subj4: TComboBox
+          Position.X = 32.000000000000000000
+          Position.Y = 289.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          OnClosePopup = Subj4ClosePopup
+          OnPopup = Subj1Popup
+          OnClick = Subj1Popup
+        end
+        object Subj7: TComboBox
+          Position.X = 32.000000000000000000
+          Position.Y = 481.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object Label7: TLabel
+          StyledSettings = [Style]
+          Position.X = 33.000000000000000000
+          Position.Y = 270.000000000000000000
+          Size.Width = 231.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'Subject 4'
+          TabOrder = 13
+        end
+        object Label8: TLabel
+          StyledSettings = [Style]
+          Position.X = 33.000000000000000000
+          Position.Y = 332.000000000000000000
+          Size.Width = 231.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'Subject 5'
+          TabOrder = 12
+        end
+        object Label12: TLabel
+          StyledSettings = [Style]
+          Position.X = 32.000000000000000000
+          Position.Y = 394.000000000000000000
+          Size.Width = 231.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'Subject 6'
+          TabOrder = 11
+        end
+        object Label13: TLabel
+          StyledSettings = [Style]
+          Position.X = 35.000000000000000000
+          Position.Y = 460.000000000000000000
+          Size.Width = 231.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          Text = 'Subject 7'
+          TabOrder = 10
+        end
+        object Label6: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 348.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial Rounded MT'
+          TextSettings.Font.Size = 30.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Subject'
+          TabOrder = 6
+        end
+        object Label14: TLabel
+          Align = Top
+          StyledSettings = [Style]
+          Position.Y = 41.000000000000000000
+          Size.Width = 348.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claLightslategray
+          TextSettings.HorzAlign = Center
+          Text = 'Double click the purble button to calulate'
+          TabOrder = 7
+        end
+        object Button2: TButton
+          Tag = 1
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 108.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 22
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object Button3: TButton
+          Tag = 2
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 171.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 21
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object Button4: TButton
+          Tag = 3
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 228.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 20
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object Button5: TButton
+          Tag = 4
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 284.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 19
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object Button6: TButton
+          Tag = 5
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 346.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 18
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object Button7: TButton
+          Tag = 6
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 411.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 17
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object Button8: TButton
+          Tag = 7
+          StyledSettings = [Family, Style]
+          Position.X = 298.000000000000000000
+          Position.Y = 476.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'speedbuttonstyle'
+          TabOrder = 16
+          Text = '1'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.FontColor = claSlategray
+          OnClick = Label15Click
+        end
+        object ScoreMeter: TLayout
+          Align = Client
+          Size.Width = 348.000000000000000000
+          Size.Height = 645.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+          TabOrder = 23
+          object Rectangle3: TRectangle
+            Align = Client
+            Fill.Color = claBlack
+            Opacity = 0.800000011920929000
+            Size.Width = 348.000000000000000000
+            Size.Height = 645.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+          object Layout9: TLayout
+            Align = Client
+            Size.Width = 348.000000000000000000
+            Size.Height = 645.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Label15: TLabel
+              Align = Top
+              StyledSettings = [Family, Style]
+              Position.Y = 401.000000000000000000
+              Size.Width = 348.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 25.000000000000000000
+              TextSettings.FontColor = claBeige
+              TextSettings.HorzAlign = Center
+              Text = '1'
+              TabOrder = 1
+            end
+            object TrackBar1: TTrackBar
+              Align = Top
+              CanParentFocus = True
+              Frequency = 1.000000000000000000
+              Max = 7.000000000000000000
+              Min = 1.000000000000000000
+              Orientation = Vertical
+              Position.X = 158.000000000000000000
+              Position.Y = 33.000000000000000000
+              Size.Width = 32.000000000000000000
+              Size.Height = 368.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Value = 1.000000000000000000
+              OnTracking = TrackBar1Tracking
+            end
+            object Image5: TImage
+              MultiResBitmap.Height = 48
+              MultiResBitmap.Width = 48
+              MultiResBitmap = <
+                item
+                  Width = 48
+                  Height = 48
+                  PNG = {
+                    89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                    87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                    04C8494441546843ED994B685C551880E769CCA341A3F18522EAC2148A1BB53B
+                    17AEAB08C9C24AABD60762F1052E45286E4BA1A916C5858FD06AC7D2176876BA
+                    71EB635390FA0017A52A44092693A43399C9F8FDF7FE73999973CEBDF7CC4CA6
+                    96E683CB7FCE7FCFE3FFCF7F5E7726B3C516D73859953DD1683472ABABAB0F66
+                    B3D9473636367622B7A3BE2B7C1B7191723FE572B9EF90DF8E8C8CFC48B90D7D
+                    D7353D39B0B2B27207E2D55AADB6B75028741A1C0B752E52E738C9A3A3A3A37F
+                    845A7FBA72607171F18662B17800235E465EAFEAAE585F5FBF8C231F54ABD577
+                    262626FE55756ABC1D60D4A711EFF3DC1A28FAC75F3CFB89C6B9309B8E9CCA44
+                    98B7F972B9FC1EC9D33CFD365EB88DE72C7D1C91BE425532A9224083D731F29F
+                    B3E86654B5A9D0DF2922B187FEAAAA7292E8008D15D861CE927C2CD40C0676B3
+                    2FC7C6C6A671A2A62A2B895388913F8418A8F102DBEDE3F47D50B34E62234003
+                    32654E85B9C1C30ED560979B613AC90CB0E274606969E9E67C3EFF33C9895073
+                    C5F8A75EAF4F8D8F8FFFADF9369C538810BE8D48349E35F2054F49B3A9A1CE09
+                    9E939A8DE3266C794BD306D608B068EFE660F995F01555E5E233AE04CF221BD4
+                    F91829E94458A01FB240F793942BC81C724FF0C20153A98229F731952EA92AC2
+                    1A0146E6A524E36597C0F8E7D925EA72A721FD629A48C8C863FC2BD469485D69
+                    03F557E15B3B98328410870D0C07E820CF15E119CD3AA1F332A21EE6827C8D11
+                    7A3ACE09315ECA88E1AA12EAE8A5AD58C426CA19F61A8AB5B5B59DDC4DEED4AC
+                    138C788A5DEA9838ACAA58276CC64B5DDA388E6EB7AA9CC86591E9F69066230C
+                    07981A8F6A3291B44EF46A7C13EA18B6D9A690E1651CEAC449EA456B469D9085
+                    39270B56D21DC617A58E8FF1CAC32A238C5D8886CF237684B9F460946D940B22
+                    3A74DE23DFC279FA7840D3014604403E52BCC1206B243A8CEF76E49BDCAE32C2
+                    70803D774C93DE60D83406965A9D68A2C697A48CAABCC1B66D9A8CB045A02730
+                    7008636D6B2B27EF34DB378C8E38349635E90D469638989EE0E8AFA82A4274F2
+                    4ECAA8CA1B9B6DB608FCA9D297790CDCC728B72D629ED62D564EDE7D24E7438D
+                    37866DB6505FD0646A6C23CFF639C4C173AE7361F712099B6DB608FCA0322DD6
+                    91C7F84F49EE422F0B7B0E5D3F22F1BDCA08C3011AFF469369981F1E1E9E691D
+                    79311E838FD14EB45592364E6CA9237549FA38F1B5CA08E320A3936CB95CFE8D
+                    0EEE559515CA953854F6CA68AA2A9836DCA5E4578B5DA1A61DEA9CA1CE6EEAAC
+                    AB4A74A90E36CAFDC22DF67ECD46D822D0C0F8139A8DA3A132800EA269136A4C
+                    68DB984E69A1AEF5E3C7FA41B3BCBC7C0B9DFCCE27E588AAAC50261851642E6E
+                    E43BF1AD47B932D1BDC7F659E9FC26661ACDE2F51B9A7542E3122D8AFA5D0F7C
+                    EA51F630D3E74DCDB6E174606161611B07C7059EAEEE46FD82EBC3259EED9393
+                    93D603D6B68D0648058C7F5DB357040C979F555E73192F381D1098A7A709DF11
+                    CD0E1CBEC266B1C1F99B90E09C424D7020CBEEF211C9E742CDC0F884C3EE05D6
+                    48DB6ED749A203024EFC6F7FDC8D9D424DA4211A7C92868FAA6AD3A08F77658B
+                    4D63BC902A02AD1089ABF30F8E267470A65AAD4E3152B3EC129755DD35D2066D
+                    1DAE542A53BEC60BDE116885685C9D7FF275C208BAFE66BD312890C92CF26CCA
+                    DFAC5B6C716D93C9FC071396A9C62D3EBD550000000049454E44AE426082}
+                  FileName = 
+                    'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Ca' +
+                    'ncel_48px.png'
+                end>
+              Align = MostTop
+              Size.Width = 348.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              WrapMode = Place
+              OnClick = Image5Click
+            end
+            object perc: TLabel
+              Align = Top
+              StyledSettings = [Family, Style]
+              Position.Y = 441.000000000000000000
+              Size.Width = 348.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = claBeige
+              TextSettings.HorzAlign = Center
+              Text = '0 to 29 %'
+              TabOrder = 0
+            end
+          end
+        end
+      end
+      object Label16: TLabel
+        Tag = 1
+        Align = Bottom
+        StyledSettings = [Family, Style]
+        Position.Y = 648.000000000000000000
+        Size.Width = 348.000000000000000000
+        Size.Height = 54.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claSlategray
+        TextSettings.HorzAlign = Center
+        Text = 'Double click the purple button to calculate the score'
+        Visible = False
+        TabOrder = 3
+      end
+      object Circle2: TCircle
+        Fill.Color = claWhite
+        Position.X = 280.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = Circle2Click
+        object ShadowEffect2: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.050000000745058060
+          Opacity = 0.050000000745058060
+          ShadowColor = claBlack
+        end
+        object total: TLabel
+          Align = Center
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 49.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = '6'
+          TabOrder = 0
+        end
+        object GlowEffect1: TGlowEffect
+          Softness = 1.000000000000000000
+          GlowColor = claGold
+          Opacity = 1.000000000000000000
+        end
+      end
+    end
+    object Toaster: TLayout
+      Align = Bottom
+      Opacity = 0.000000000000000000
+      Position.Y = 479.000000000000000000
+      Size.Width = 341.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Rectangle4: TRectangle
+        Align = Center
+        Fill.Color = claBlack
+        Opacity = 0.400000005960464500
+        Size.Width = 227.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 15.000000000000000000
+        YRadius = 15.000000000000000000
+      end
+      object toasterMsg: TLabel
+        Align = Center
+        StyledSettings = [Family, Style]
+        Size.Width = 222.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Toaster'
+        TabOrder = 1
+      end
+    end
+    object Layout1: TLayout
+      Align = MostBottom
+      Position.Y = 520.000000000000000000
+      Size.Width = 341.000000000000000000
+      Size.Height = 182.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle1: TRectangle
+        Align = Center
+        Fill.Color = claWhite
+        Size.Width = 193.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 20.500000000000000000
+        YRadius = 20.500000000000000000
+        object Layout2: TLayout
+          Align = MostRight
+          Position.X = 152.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Image1: TImage
+            MultiResBitmap.Height = 48
+            MultiResBitmap.Width = 48
+            MultiResBitmap = <
+              item
+                Width = 48
+                Height = 48
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                  87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0267494441546843ED98CDAB4D5118870F238A818912CAC745914219182053F9
+                  4CC284A99464A6C43F4391A2AE5B77240AC98D81897C45C8571891428AE7E7AE
+                  5D6FAB7DD6FE58EBEC73EBACA79ED6EE9CB3DFB5D6DE6BBFFB5DA797C98C38B3
+                  5CDB968DB80BB7E2225C88E2337EC43B38818F70C6A0491FC667F8B7A64FF110
+                  C65EB06856E1432C1B641D1FE0180E85DDF80DCB06D644C5D0B2EB941DF81BFD
+                  C1FCC40BB81F57E002A78E0FE045D46FFCF37EE176EC8495F815FD415CC16558
+                  C572BC8AFEF95FB0CEF951E8A1BB8FB6E33F780A9B721A75AE8D751707CA11B4
+                  1DCA13D89693E8C73B88034157FF09DACEB4146219471BF3310E84CD683BFA81
+                  4B3016AD7BFFC1DE84AD98EDDA32F6B8B64057EEDDF46114AF51B12C7E5FB509
+                  4D40E581C5EF34063FD636D726E505DADB9CF20DBA066DEC325FE24E6CCD77B4
+                  01E7612AE6A38DDD4F2DB720A125E4175E0AD835A1F1FD27F4830FAE2D58ECDA
+                  14D489F51E8F4F1FF6A7C90454FBA7C24F9BB75077DCAA943D89414213D066C4
+                  B2D7B529F063DD766D5236A07DA0548DAEC658D6A15F13ADC70295DAAF303A0B
+                  E936FAA5C4358C4131AFA38DE997126FB1F8AE320B55B10F6D67F20CB6E52CFA
+                  F1B451B2E86D5F7CA7C944A12B3685B6C394E5F43D541F162D2165204D246A09
+                  15C46E68B43BEBB7A1D166A713425BCA4B7814D7E21C9CEB8E8FE165D4F6D13F
+                  AFD32D65C116FC84FE609AFA0643E573B22C5446ECDF2A37712986489A85CAD0
+                  43D7F48F2DA5E3BA2FC2A459A80A9517E7F1063E473D1352C7FAEC1CEA85D884
+                  E45928336A0C340B7541A32C54B9E31902764C33717C95E42C94892467A16193
+                  B35026333AF47AFF0021FA3AA8B3EF8E270000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Mo' +
+                  'nocle_48px.png'
+              end>
+            Align = MostLeft
+            Size.Width = 26.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = Image1Click
+          end
+        end
+        object Layout3: TLayout
+          Align = FitLeft
+          Size.Width = 41.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Image2: TImage
+            MultiResBitmap.Height = 48
+            MultiResBitmap.Width = 48
+            MultiResBitmap = <
+              item
+                Width = 48
+                Height = 48
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                  87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01C2494441546843ED98494EC3401045C3700D100B160C028110776003176538
+                  0012578105529811D31EFE07B7647F57A7BB139542A09FF464CBD5BF82EDE0B8
+                  7B50A9544C96E1297C809F9972EC195C8531BCFA76E0873C43AB598ECC2E41C5
+                  AB6F0F5E21AB4189C750F1EADBE30D5AE1125FA0E2D277AED9B6E1C051844CEE
+                  B8406A7C2E9DBEF3CD7666A927306D72FE07AC3116A99C4BDF7F71079490C91D
+                  17488DCFE56FDD817A02D3C63A818F661B83DFE5D4F799AF0D4AAA6F0EBDBED6
+                  095C34DB49386FB66DBCFAF6588393BCF63E41EBB5D7ABAF49987894BC41BEC2
+                  1338EA43BCFA562A15C16BF5C0AB6F07AFD503AFBE3DBC560FBCFAF670593D00
+                  5E7D7B68E8121EC0DBD6B1E00D648D63B4A6687D5C9368E0109275C83F381CE7
+                  3E8F9123D8CE5045EBE39A4403BC6DFB90F049700DAFE00A0F00D63846734AAA
+                  1EA338A7017A073720E1550F577E13B2666594543D46714E03413E8FB76080FB
+                  A39EE78A35661C3B94CCC838995EF8D9FD6611FECA199D75D68F700792F65768
+                  17F23DDDCA28A97A8CE29C0686909311B207F98B780FB77900B0C6319A5352F5
+                  18C5390DCCFC6374E67EC8DEA1152C91D340C5A56F5D9530ACAB12625D95A854
+                  A20C065F381CA46CFBA97AA00000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Ma' +
+                  'th_48px.png'
+              end>
+            Align = MostRight
+            Position.X = 16.000000000000000000
+            Size.Width = 25.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = Image2Click
+          end
+          object GlowEffect2: TGlowEffect
+            Softness = 0.699999988079071000
+            GlowColor = claDarkviolet
+            Opacity = 0.000000000000000000
+          end
+        end
+      end
+      object Circle1: TCircle
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        OnGesture = Image3Gesture
+        Align = Center
+        Fill.Color = xFF6A0666
+        Size.Width = 118.000000000000000000
+        Size.Height = 92.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        Stroke.Thickness = 8.000000000000000000
+        object Image3: TImage
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          OnGesture = Image3Gesture
+          MultiResBitmap.Height = 48
+          MultiResBitmap.Width = 48
+          MultiResBitmap = <
+            item
+              Width = 48
+              Height = 48
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                0703494441546843ED99696C55451480BBEF0BD5B25445D4682828A240A209C6
+                288231242A466451513451111AE51F1834880113FC61D0160CFA43244A700103
+                8A2289448BC634150D20B244C480C8126C6B77BAFA9DB9E7DEBEBBBCFBDE6B4B
+                FFD02FB9993367E6CE9C33FB9D9B34C8209738C91AF689EEEEEE94E6E6E64984
+                77129D949C9C3C8670A449ECE124E9BFA7A4A45413EEC9C9C9D94BBE2E4DEB35
+                7D7200A347624C594747C7A369696957A93A2E78E76FDEF908B13C3737F794A5
+                4D9C5E39505757771995AF686F6F7F2623232353D5BDA2ADADAD353D3D7D3D65
+                BD5A545454A7EAB849D8015A7D36AD5E8E38D4D2F41BE77816D11B9F59D1F888
+                DB018C4E6F6C6CAC600C3FAB2A2FD27ADBC9F72D63FB505757D789CECECE3649
+                484D4DCDE0BDAB491B43DA3454F7F3144A9A17F2ACC389C5E46B575528713940
+                A179B4FC5644A9DCCB41D25753E9A754DAAABA50C89FD5D4D4348BFC4B89CA84
+                F7B2333B3B7B264E37693C2A311DA025335B5A5A7620DE63692CD03751C14BAC
+                26EB30A453D50E1878054109F98A18E327B2B2B28E5A293DE0481A0D53464FAD
+                A29772546DB383B267507687C67B07866CE0E98E7C184A47EAEBEB835A2EA9A1
+                A1611C7976D5D6D676DAF9D11D9356D72C3E48BF91328FDAF9ED07DD5B9A252A
+                A13D40EBCCA5E24D1AB5D94FAB4ECBCFCF9749E70243EE22F8929EC9B5343D50
+                4E23C146569B6541AB0DEF0EE7BD5D88375B1A8787199E327C0389EA002D3C94
+                6E3D8478B9A53146FCC17307C69F559503F98B357FB1A589CAAF8CEFC918DBA2
+                71075ABC84F27F24ED5A5509E7D833C6161616FEAB7117291AFAC098D7091CE3
+                65CC53F88C20E3052A5D4010CB78E156E6D4932ABBC8CBCB3BCD987F885E8A74
+                6E1865AF54D947A003B2C3B2C13CA1510385BC8CF107351AC47C0DE361B1863E
+                70621F9BE4728D1AE881A79813576AD445A003B4F42276D80C8D0A4758112A54
+                0E0487AF513126B470E410F1C1985F830DC7349AA4BBFD422BE6C6E7002FA652
+                C13C8D1AD0AD8EB59C656666A6AA181396D5C8C6F1415DB289ADB66216F4C23C
+                ECF0D9EB53303E6FA30259C36DEA69FDCD2A0F18D4B9098365E53230AC4632B4
+                2769D4C1E70093F56E156DBE085A312E36D429BBF05756CC0287BCB605CE8109
+                1A1A78E93B1543C1F1ED2AC684BCDB540C85A1B45B459B891A3AF81CE0A5D12A
+                1A88EF533114568FD90461AB94CD0126A9E48D0757DD5EDB84A01E18A1A18173
+                CA711543A1F056BA5D4E99072C4D20FBC9F320CF058D87424FFDA9A24D89860E
+                3E07580EF35534B0F6D7AB181376D8E34C3E9968CFE3F8CF9475411EE46A740B
+                244DF298CC71404FFDA7A281B20A5474F01D253884B5B1EEA66B5456834C5AD7
+                9CEB071A7A404EC2CE115D1A837394EB50E8EB018C6F50D1C021CBE7F540C1EE
+                EBFAE8C136DF68089A03A7353470260ADD352F26CC95EB54B471D926F81C60D9
+                3CA2A281B8F7783B908CD7D0E0B54D08EA81BD1A1A18FF53540C458ED31C879F
+                A6DB37CA070F614DE4C350AC425FCE335DC6B6BE160A06BBBE02C1659BE09BC4
+                6CD79379F1078D0AF5AC1C23E8CEC0DD18C34B1966CB98607318A369AA8E859C
+                ED2B98A06F16171707AE7238998B2D6768C03C5509B7B33255A96CF0F500C656
+                7198FB47A3420105CD51D901275369D9D75822F7137D3C01E305F9CE584E5D87
+                2943F60E1F5267A4F11CE64EB222CA72ECC2E7002F757098DBA85103BA2518EC
+                18882C572C9F23BE12B9E4F682127A6E1B4EBCA07183944F2037160E1CE63EC0
+                0EDF5564D01C102A64CD5559184D8B94A92CADF3BEEEBA7D860648A6AE35CC91
+                C75425CBA7DC0B5DAF51F97E68C1A9B51A7511E800E3EC14BDF09E460D8CC995
+                547293C814B69B4ABB4D423F80133594F98BC8F4EC2D0C97152641A1F5D773D6
+                3AA35117513FEAE5FE132764D972BE73A9C4F9A8A7A2F9B4CCBB7D1C42666CD3
+                9BD329F337CA1C41F93F118FFCBA3B4B639546BB378D368492860C195243373A
+                C346906EA5F06FE88961B4C8068C9F8CFAB0959A3818BB85322788F194391C79
+                A7C7786161D8A56F54070466FDC754F28E466DC6534925158E63A855934736BA
+                328658DC8734CAFC9EFC53698499050505E765D860FC1E92BC1B975CBD47BD13
+                12422FB6040A4967D2CAC7CA7D96C6422639436C150EBC814317C89782215330
+                E401922712DE401E197EEDA49F651C1F224F25866FC568B93F927995CD5EB084
+                7C4BE94DEFE616D7D5624C07042A96CBDD2D88F75A9A1E30E22F2A59414B6D26
+                4CE472772EEF2E67131CA5EA48BE668F7804C7FB7EB96B233D410B9753E873AA
+                F2E2BB5E67889C9704DE2BE6BD51A4C9F5FA5454B1AED75F8CD5F236713B6043
+                4FCCA212B923EAEF1F1C72E3273F38A4A7E326741207C1B8FC84E5B31427D6CA
+                3C5075AFA18C56CA7A9BB03451E385847B20127AA3AF3FF93E44ACC0F081FDC9
+                E70527BCBF59C7128A4345920EB53CF29B5556A26AE643253DD92FBF590719E4
+                D22629E97FFE58937A0F7FCF490000000049454E44AE426082}
+              FileName = 
+                'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Ma' +
+                'le User_48px.png'
+            end>
+          Align = Center
+          Size.Width = 41.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object sample: TLabel
+          StyledSettings = []
+          Position.X = 36.000000000000000000
+          Position.Y = 32.000000000000000000
+          TextSettings.Font.Family = 'Bauhaus 93'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claCadetblue
+          Text = 'sample'
+          Visible = False
+          TabOrder = 0
+        end
+        object InnerGlowEffect1: TInnerGlowEffect
+          Softness = 0.000000000000000000
+          GlowColor = claDarkviolet
+          Opacity = 0.899999976158142100
+        end
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.100000001490116100
+        Opacity = 0.100000001490116100
+        ShadowColor = claBlack
+      end
+    end
+  end
+  object Layout5: TLayout
+    Tag = 1
+    Align = Client
+    Size.Width = 341.000000000000000000
+    Size.Height = 702.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    TabStop = False
+    object Rectangle2: TRectangle
+      Align = Client
+      Fill.Color = claBlack
+      Opacity = 0.850000023841857900
+      Size.Width = 341.000000000000000000
+      Size.Height = 702.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Layout6: TLayout
+      Align = Client
+      Size.Width = 341.000000000000000000
+      Size.Height = 702.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label1: TLabel
+        Align = Horizontal
+        StyledSettings = []
+        Position.Y = 40.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Firstname Lastname'
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Align = Horizontal
+        StyledSettings = []
+        Position.Y = 115.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'ID number'
+        TabOrder = 1
+      end
+      object Label3: TLabel
+        Align = Bottom
+        StyledSettings = []
+        Position.Y = 654.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.FontColor = claWhite
+        Text = 'email  | phoneno'
+        TabOrder = 2
+      end
+      object Button1: TButton
+        Align = MostBottom
+        StyledSettings = [Family, Size, Style]
+        Position.Y = 680.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Logout'
+        TextSettings.FontColor = claWhite
+        OnClick = Button1Click
+        object Image6: TImage
+          MultiResBitmap.Height = 48
+          MultiResBitmap.Width = 48
+          MultiResBitmap = <
+            item
+              Width = 48
+              Height = 48
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                044A494441546843ED994968136114809BA64BD2D216B4A02D5A41942A1E542C
+                75016BE9415110B182A87717C4BB4745CFD6052CB4274F22A217F5A0505CEA06
+                D6BA20E28A87820A5A69D3D5364DE2F7665EA2CDA493C9A4492AE4839F79FF9B
+                C9CC7BEF7FEFFFFF9914E4C993274F4EF1E8D1356363638B2391C876C42DB415
+                B43A9A9756100E87039CEBF77ABDAFE9BEF0783CB7CACACAFAE4DC6CE1CA018C
+                F28E8F8FEFC1C0A3C1607073494949A19EB265727232525454F40C87CEFAFDFE
+                6B3814D253AE49D981E1E1E196C2C2C276C47A53E39A0F3870901179A87D5738
+                8A9C40B4FD232323ED5353535D74D3355EA89F9898B8CF3DDB18D162D5A58CA3
+                11181A1AAA66D86F23AE3335165ED16EE0E4238EDF693F44090B88722DAD1979
+                176DA5A18D03071EF2DBD6CACACA7E553926A9038140603E79FB007195A93191
+                7C2E2E2EBE1A0A854E5455557D50B52D447B2DC69E6414775237F1CFEEA5AE5A
+                AAABAB87B4EF085B0778988F873E20E71B556580FE1351DD5F5E5EDEABAA9460
+                E6DA48F15F25308B5415E52E35B13595E2B6AD81D1D1D1B678E3E11E11DCE0D6
+                7801239F92928D8C5E8FAAA2B4E0DC2995D343661B1C88FCDB188DFB44BF442F
+                9913241C018CF412F98BDA35A0C8BE10B13D0CEFA4AAE604091D20D2FB38C8AA
+                6A20058B430728D65FAA9A7578E6390257A4DDF460DAEC894B9DCB7A2A63C873
+                48DB271C6B55E508CB0830952DA3C01AB46B449FF4999DC24A02A3BC91C37399
+                A54C4D722C0E60AC6CCC62E0CC731698F7DACD0635B242331287B46F8BC501F2
+                709AF744E5A68A5983454E66BA0E52AA23D9AC6771805966DA72CF0DD2DA6CA5
+                03C13B2453B75D5D5856622E96FDC87CB367A450BDCFE7FBA8DD1991225471D6
+                61FAEEC38ED6448BA7650428DA0A150D4A4B4BBFA9983330BE0EBB6486B2D485
+                C50170B443CD0162ABCF14FF627180FA99B61B6446A85131977C27139A48A10B
+                DA8F91A8065E725863F68CA26E66F325DBE98C625343BDD8D03AD3BBB4650498
+                75DEA968C0BAD0A462D6E1D99D18BE6926E3058B0378DBADA28178AF62D6A060
+                65C378B8A2A2E230CFB7DD3C5A1C60EEED92ED8376E566ABD91BC536765940F2
+                BD997CEFD4BE2D1607FC7EFF675E151F6B578ADA8353A7B59B514899A71C1AE4
+                85C7D4B884CDD45E29AA681B181808735CAFA73382936D432212CEF9DCC88B13
+                6F1063DB0AA2F385D698C9770237585248A07042187B4CBB06A4D15256C4EB6E
+                A29433D848B5FF9B4ADAEE0E0E0ECED34B5CC3BD6B68DDF1F747D7A697382227
+                9F55B8E7367E7F0971A1A989219F55E4DC94F693923085A270A3DFA4D20EC4B7
+                A6C604FD72A6D71E0CB91208041C7F6624C2EB6877F8BD7CE58B375E3E6CED4E
+                C578C1D1C62D854F8BDD4CC17D4CBD7D18E2611F55170C069730822D9CCFCDA7
+                C5283CC0CFCC7406838EC8DAA0EAB46014C3387C9E543C8EBF4155A744CA86CC
+                B5CFEBAE2229EBC47FFB07473CA495E52F260C9557D2108EFDE475F02B0667EC
+                2FA63C79F2E4C92505057F00198855744F3B08B90000000049454E44AE426082}
+              FileName = 
+                'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Si' +
+                'gn Out_48px.png'
+            end>
+          Align = MostRight
+          Position.X = 296.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Label4: TLabel
+        Align = Horizontal
+        StyledSettings = [Family]
+        Position.Y = 128.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 145.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 85.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = '0'
+        TabOrder = 4
+      end
+      object Label5: TLabel
+        Align = Horizontal
+        StyledSettings = [Family]
+        Position.Y = 239.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = '14 Course(s) You meet their requirement aps'
+        TabOrder = 8
+      end
+      object Image4: TImage
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              04C9494441546843ED994B685C551880E79998478346E30B45D48529881BB53B
+              17AEAB08C9C24AABD60762F1052E4510B72234D5A2B8F0115AED58FA02CD4E37
+              6E7D6C0A521FE0A254855482C924E96466327EFFBDFF5C66E69C73EF3D3393A9
+              A5F9E0F29FF3DFF3F8FFF39FD79DC96CB3CD554E56654F341A8DDCDADADAFDD9
+              6CF6A1CDCDCD5DC89DA86F0FDF469CA7DCCFB95CEE7BE477A3A3A33F516E53DF
+              754D4F0EACAEAEDE8A78B956ABED2B140A9D06C7429DF3D4394AF2F0D8D8D89F
+              A1D69FAE1C585A5ABAB6582CBE55AD565F1C1A1ABA46D55DB1B1B17189B63E44
+              BE3D3939F9AFAA53E3ED00A33E83F880E7A640D13FFEE6394034CE84D974E454
+              26C2BCCD97CBE5F7499EE4E9B7F1C2CD3CA7E9E390F415AA924915011A1C62E4
+              BF60D1CDAA6A4BA1BF1344622FFD6DA8CA49A20334566087394DF291503318D8
+              CDBE1A1F1F9FC1899AAAAC244E2146FE5DC4408D17D86E1FA5EF7734EB243602
+              342053E644981B3CEC4C0D76B959A693CC002B4E079697976FC8E7F3BF909C0C
+              35978D7FEAF5FAF4C4C4C445CDB7E19C4284F04D44A2F1AC912F794A9A4D0D75
+              8EF11CD76C1CD763CB1B9A36B04680457B47A552F98DF01555E5E273AE044F23
+              1BD4F90429E94458A01FB1400F90942BC83C726FF0C20153A9822D7733952EA8
+              2AC21A0146E68524E36597C0F867D925EA72A721FD7C9A48C8C863FC4BD46948
+              5D6903F5D7E15B3BD8328C10870D0C07E820CF3DE529CD3AA1F332A21EE6827C
+              8D117A32CE09315ECA88E1AA12EAE8A5AD58C426CA19F61A8AF5F5F55D5CB26E
+              D3AC138C78825DEA8838ACAA58276CC64B5DDA388A6E8FAA9CC86591E9F68066
+              230C07981A0F6B3291B44EF46A7C13EA18B6D9A690E1651CEAC471EA456B469D
+              9085392F0B56D21DC617A58E8FF1CA832A238C5D8886CF22EE0D73E9C128DB28
+              174474E8BC47BE85B3F4719FA6038C08807CA4788341D6487418DFEDC837B945
+              6584E1007BEEB826BDC1B0190C2CB53AD1448D2F49195579836D3B3419618B40
+              4F60E030C6DAD6564EDE69B66F181D7168AC68D21B8C2C71303DC6D15F515584
+              E8E49D9451953736DB6C11F84BA52F0B18B89F516E5BC43CAD5BAC9CBCFB492E
+              841A6F0CDB6CA13EA7C9D4D8469EED739883E74CE7C2EE251236DB6C11F85165
+              5AAC238FF19F91DC8D5E16F63CBA7E44E2079511860334FEAD26D3B030323232
+              DB3AF2623C061FA19D68AB246D9CD85247EA92F471E21B9511C6414627D972B9
+              FC3B1DDCA52A2B942B71A8EC93D15455306DB84BC9AF16BB434D3BD439459D3D
+              D4A9AA4A74A90E36CAFDCA2DF61ECD46D822D0C0F8639A8DA3A132800EA26913
+              6A4C68DB984E69A1AEF5E3C7FA41B3B2B272239DFCC127E5A8AAAC5026185164
+              2E6EE43BF1AD47B932D1BDD3F659E9FC26661ACDE1F56B9A7542E3122D8AFA5D
+              0F7CEA51F620D3E775CDB6E1746071717147B1583CC7D3D5DDA85F54ABD50B3C
+              3BA7A6A6AC07AC6D1B0D900A18FFAA662F0BF2B30A36BCE2325E703A20304F4F
+              12BE439A1D38183F870DCEDF8404E7146A82035976978F493E136A06C6A71C76
+              CFB146DA76BB4E121D1070E27FFBE36EEC146A220DD1E0E3347C58555B067DBC
+              275B6C1AE38554116885485C997F7034A18353EC0ED38CD41CF292AABB46DAA0
+              AD83954A65DAD778C13B02AD108D2BF34FBE4E1841D7DFACD705053299259E2D
+              F99B759B6DAE6E3299FF007921A9C6D1912A640000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Ca' +
+              'ncel_48px.png'
+          end>
+        Align = Horizontal
+        Size.Width = 341.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = Image4Click
+      end
+      object Image7: TImage
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0500494441546843ED994D685C55148093F94932934C26860C52FFB134D6902A
+              A20B5D46FC4169EA4250C1451145AAADA68D0B2B82084A5D888B4041FCDB08EE
+              6DAA60452BAE44311691B4B5E24FED8F4268123349269949327E67DEE99097F7
+              EE7DEF754646713E18EE39E7DE77DF39F7E7DCFB9296264DFEE7B46A59171616
+              16BEA3B8C5D18C4C747676DEA672CDD42D80E9E9E96C7B7BFBACAA560A8542B6
+              AFAF6F4ED59A88695933C964F25A150321D0D06D83A85B00B1582CB453ADADAD
+              D7A85833750B00FEF3015CAD6518AED2D2C8DADA5A4A452B8101E4F3F93B6766
+              660AF3F3F35F2E2E2E3E5C2E97935A55810D793D7563884F3996604AA5D24E32
+              D6D31B9DA4EF18F6617E47E7E6E62E2C2D2D6DD12A23D62C4487099CFE1E71C0
+              B154F883DFBB2C83775657571F5A595979B5ADADADC3A98A06CF9E8DC7E3BB48
+              AB5FF09E9DBC6F2FFDF66BB5CCC27826937940555FAC013012BB290E3ADA3F4A
+              9E5FC611DD10C45D04F1B9AA1E8C0130857D8CCE4F883D8EA5619C4CA7D33731
+              3325D55D18F70069F1658A463B2F6C6579ED52D983EF0CB071B7B13E8FB1B6E3
+              6A6A3433F8B3259BCD5E50BD8AEF0C30FAAFD5E0FC24BF51D6EE209B3C273FE4
+              6D2C81E7B01FAFB488CE658944E205955D786680D11F2280A3AA86A6582C9608
+              7A94F5FA26CEAEAAD9055926CE72D843DBD769EB4AC741F04CB1A3A36320954A
+              FDACA60A9E19E0E569DAAEA81A0AE99CBBD076D2E14193F382D4D1668CB63B78
+              C477539A20E036995555AB7802E8EAEAFA98CBD61087CD39350542DF233CF7A9
+              AA81D0F6139ED9A76A2038BEC0EC3D41F087D454C5964673A4D10F10EF762C46
+              26593637DB46DE0F5D4E3F20DEE858FC610F7D4BB08FB27C4EA9C985318D7677
+              774FE1D8BD887B03A6FBADA8CE0BFACCDB8EE645DE4990FB39C46E37392F584F
+              E28B70229FA4B8C1D1DC304203047B42D5489030064918320B1E489B67489B81
+              B756E30CAC8791B852450F8CD0191523C365EDB48A1E58F757A8682554006C68
+              E3D596E0CA2AD615325541452BA102609AE506EA0B57E94BFE38616DDB9E3DAF
+              A5156B000C6E0C079F673A2F57930732D53D2A4686672549F8C2AC5FC7DEDB87
+              0FD67D6AACE461F96A7A9FDF50C560E6B8A6D148871F8EC9B7866CE0AD8EC51F
+              066F9C44F1584F4FCFB49A5CF8CE00CE3F48211F3241CE0B0338F28CCAA191D1
+              A5B03A2FB07C77F03BC63BEE50930BCF0CD0B17C017DE868E1909CCDA61BE684
+              3DA2262B2CCBFB5822E31C5009350522EFE01E34B8F14CF0CC00D14ED2B8A86A
+              287024894387097E0F4BC3788B953ADA8CD0F65014E70579076743A7AA557CF7
+              0023F4066B7A54D5A8C875FA3DD6ED11CE885FC4407F9B65C312C0E3A8EBBFAF
+              A3F01177A16195ABF806303535956163FE88B8C9B1341616C4B25EA52B03B21E
+              DF4D9CCBE5F28CD64BAA361C96CF989FF382318D12408C9DFF0DE2AD8EA561FC
+              891FFD32A8AABB301E64EC0152F0DA7E55FDF0EDF012B1F5F58AC979C17A12B3
+              093F2388C3AA5640FF95E259A67413B3B49D8C12FAC367236CF4D3F471BFF485
+              3A42DFBF393555E45BC378E50E0537C67EAEBDF3A4BF09A6F2115EE84A7FE869
+              EA76CFCECE9EA52C87F969DB2771B85DBBA9207DCB3BA89B903F67CAF7B95619
+              31EE81F5F0A214E783F576C84B0F50F8FEE5C08703A4C41755AE09EB12BA4890
+              F3CAEF5A86214A5B2BA1020803D31FDAA9286D83A86700A1BFCCA2B40DA26E01
+              908D428FEAF2F2F2BF6F067A7B7BFF62B37FADAA11DA7C55AFFF503669D2A4A5
+              E56FD8A25E92FB7A44610000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Cebolenkosi Shezi\Desktop\CourseCamp\Coursecamp_Icon\Se' +
+              'ttings_48px.png'
+          end>
+        Align = Horizontal
+        Position.Y = 584.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Line1: TLine
+        LineType = Bottom
+        Position.X = 61.000000000000000000
+        Position.Y = 285.000000000000000000
+        Size.Width = 233.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+      end
+      object Label17: TLabel
+        Align = Horizontal
+        StyledSettings = [Family]
+        Position.Y = 286.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'History Checks'
+        Visible = False
+        TabOrder = 6
+      end
+      object VertScrollBox1: TVertScrollBox
+        Align = Horizontal
+        Position.Y = 376.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 201.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+        Viewport.Width = 341.000000000000000000
+        Viewport.Height = 201.000000000000000000
+      end
+      object Label18: TLabel
+        Align = Horizontal
+        StyledSettings = [Family, Style]
+        Position.Y = 352.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        TextSettings.WordWrap = False
+        Text = 
+          'Date           Time                                  Courses    ' +
+          '   Score'
+        Visible = False
+        TabOrder = 13
+      end
+      object Label21: TLabel
+        Align = Horizontal
+        StyledSettings = [Family]
+        Position.Y = 183.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = '                                                         Points'
+        TabOrder = 7
+      end
+    end
+  end
+end
