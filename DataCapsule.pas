@@ -77,10 +77,10 @@ begin
     {connection initialization}
     connection := TMyConnection.Create(nil);
     connection.Port := 3306;
-    connection.Password := 'Tut@123';
-    connection.Database := 'coursecamp';
-    connection.Server := '192.168.43.128';
-    connection.Username := 'cousecamp';
+    connection.Password := '';
+    connection.Database := '';
+    connection.Server := '';
+    connection.Username := '';
 
     try
 
