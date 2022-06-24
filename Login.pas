@@ -55,8 +55,8 @@ implementation
 
 procedure TForm2.Button2Click(Sender: TObject);
 begin
-    passwordLogin.Text := 'Tut@2017';
-    idOrEmail.Text := 'cbshezi';
+    passwordLogin.Text := '';
+    idOrEmail.Text := '';
 end;
 
 procedure TForm2.dashbordLinkPnlClick(Sender: TObject);
